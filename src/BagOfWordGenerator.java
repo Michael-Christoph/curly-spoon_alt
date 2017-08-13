@@ -161,7 +161,10 @@ public class BagOfWordGenerator {
 		
 		GrayU8 toProcess = new GrayU8(binary.getWidth() + 1 + CACHE_SIZE/2,
 				                      binary.getHeight() + CACHE_SIZE/2);
-		ImageMiscOps.copy(0, 0, 0, 0, binary.getWidth(), binary.getHeight(), ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class), toProcess);
+		ImageMiscOps.copy(0, 0, 0, 0, binary.getWidth(), binary.getHeight(),
+				ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class), toProcess);
+		//MP
+		BufferedImage imageToProcess = VisualizeBinaryData.renderBinary(toProcess,false,null);
 		
 		Instance inst;
 		
@@ -214,18 +217,21 @@ public class BagOfWordGenerator {
 		    System.out.println(new File(".").getCanonicalPath());
 			//MP-Versuch
 			for (int i=1; i<=18;i++){
-
+				t.addTrainingExample(pathTraining + "pt_3-0-13/pic_" + Integer.toString(i) + ".jpg");
 			}
 			//t.addTrainingExample("\\Users\\Michael\\iss-java-projekt\\src\\corpus\\Krypto-Buch\\pic_1.png");
 			//t.addTrainingExample("corpus\\Krypto-Buch\\pic_1.png");
-			t.addTrainingExample(pathTraining + "Krypto-Buch/pic_" + Integer.toString(2)+ ".jpg");
+			//t.addTrainingExample(pathTraining + "Krypto-Buch/pic_" + Integer.toString(2)+ ".jpg");
+
 
 			//t.addTrainingExample(pathTraining + "PT_3.0.61/20170602_134243.png");
 			
 			t.cluster();
 			
-			double u [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_19.jpg", "log_1.csv");
-			double v [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_20.jpg", "log_2.csv");
+			double u[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_19.jpg", "log_1.csv");
+			double v[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_20.jpg", "log_2.csv");
+			//double u [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_19.jpg", "log_1.csv");
+			//double v [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_20.jpg", "log_2.csv");
 			//double u [] = t.generateBoWForImage(pathTest + "20170602_134259.png", "/Users/bdludwig/log_1.csv");
 			//double v [] = t.generateBoWForImage(pathTest + "20170602_134148.png", "/Users/bdludwig/log_2.csv");
 
