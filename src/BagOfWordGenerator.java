@@ -8,6 +8,8 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 
+import boofcv.gui.image.VisualizeImageData;
+import boofcv.io.image.ConvertRaster;
 import weka.clusterers.SimpleKMeans;
 import weka.core.*;
 import boofcv.alg.filter.binary.GThresholdImageOps;
@@ -101,8 +103,11 @@ public class BagOfWordGenerator {
 	
 	public double [] generateBoWForImage(String fileName, String logfile) throws Exception {
 		BufferedImage image = UtilImageIO.loadImage(fileName);
+
+		//"Converts a buffered image into an image of the specified type"
+		//GrayF32: "Image with a pixel type of 32-bit float"
 		GrayF32 color = ConvertBufferedImage.convertFromSingle(image, null, GrayF32.class);
-		
+
 		// konvertiere Foto in Graustufen nach der Sauvola-Methodik
 		
 		GrayU8 binary = new GrayU8(color.getWidth(), color.getHeight());
@@ -152,14 +157,18 @@ public class BagOfWordGenerator {
 		// RGB-Bild in Graustufenbild konvertieren
 		
 		BufferedImage image = UtilImageIO.loadImage(fileName);
+
+		//"Converts a buffered image into an image of the specified type"
+		//GrayF32: "Image with a pixel type of 32-bit float"
 		GrayF32 color = ConvertBufferedImage.convertFromSingle(image, null, GrayF32.class);
-		
+
 		GrayU8 binary = new GrayU8(color.getWidth(), color.getHeight());
 		GThresholdImageOps.localSauvola(color, binary, 8, 0.05f, true);
 		
 		image = VisualizeBinaryData.renderBinary(binary, false, null);
-		
-		GrayU8 toProcess = new GrayU8(binary.getWidth() + 1 + CACHE_SIZE/2,
+
+		//MP: bei width ohne 1+C funktioniert's, bei height aber so und so nicht.
+		GrayU8 toProcess = new GrayU8(binary.getWidth() +1+ CACHE_SIZE/2,
 				                      binary.getHeight() + CACHE_SIZE/2);
 		ImageMiscOps.copy(0, 0, 0, 0, binary.getWidth(), binary.getHeight(),
 				ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class), toProcess);
