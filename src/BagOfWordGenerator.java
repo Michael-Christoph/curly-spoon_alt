@@ -21,6 +21,9 @@ import boofcv.struct.image.GrayF32;
 import boofcv.struct.image.GrayU8;
 
 public class BagOfWordGenerator {
+	//MP
+	int counterMP = 0;
+
 	private final int NUM_WORDS = 64; // Anzahl verschiedener Cluster, d.h. bag of words
 	private final int CACHE_SIZE = 16; // Anzahl Kacheln in X- und Y-Richtung des Bilds
 	private Instances data; // Datensatz, der generiert werden soll
@@ -54,6 +57,10 @@ public class BagOfWordGenerator {
 	}
 
 	private Instance greyValueVectorForCache(GrayU8 toProcess, int x, int y) {
+
+		//MP
+		System.out.println("Entered method 'greyValueVectorForCache' ..." + counterMP++);
+
 		int i = 0;
 		double [] vals = new double[CACHE_SIZE*CACHE_SIZE];
 		double norm;
@@ -88,7 +95,7 @@ public class BagOfWordGenerator {
 		inst = new SparseInstance(CACHE_SIZE*CACHE_SIZE);
 
 		//MP
-        System.out.println("The instance inst: " + inst);
+        //System.out.println("The instance inst: " + inst);
 
 		// Normalisiere den Vektor auf Betrag 1
 		
@@ -102,6 +109,11 @@ public class BagOfWordGenerator {
 	}
 	
 	public double [] generateBoWForImage(String fileName, String logfile) throws Exception {
+
+		//MP
+		System.out.println("Entered method 'generateBoWForImage' ...");
+		counterMP = 0;
+
 		BufferedImage image = UtilImageIO.loadImage(fileName);
 
 		//"Converts a buffered image into an image of the specified type"
@@ -113,8 +125,21 @@ public class BagOfWordGenerator {
 		GrayU8 binary = new GrayU8(color.getWidth(), color.getHeight());
 		GThresholdImageOps.localSauvola(color, binary, 8, 0.05f, true);
 		
+		/*
 		GrayU8 toProcess = new GrayU8(binary.getWidth() + 1 + CACHE_SIZE/2,
 				                      binary.getHeight() + CACHE_SIZE/2);
+		*/
+
+		//MP-Alternative zu oben (vgl. analog addTrainingExamples):
+		int korrekturWidth = 0;
+		int korrekturHeight = 0;
+		if (binary.getWidth()%CACHE_SIZE != 0)
+			korrekturWidth = CACHE_SIZE - binary.getWidth()%CACHE_SIZE;
+		if (binary.getHeight()%CACHE_SIZE != 0)
+			korrekturHeight = CACHE_SIZE - binary.getHeight()%CACHE_SIZE;
+		GrayU8 toProcess = new GrayU8(binary.getWidth() + korrekturWidth,
+				binary.getHeight() + korrekturHeight);
+
 		ImageMiscOps.copy(0, 0, 0, 0, binary.getWidth(), binary.getHeight(), ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class), toProcess);
 
 		// Initalisiere Histogramm der Cluster
@@ -162,18 +187,38 @@ public class BagOfWordGenerator {
 		//GrayF32: "Image with a pixel type of 32-bit float"
 		GrayF32 color = ConvertBufferedImage.convertFromSingle(image, null, GrayF32.class);
 
+		//GrayU8: "Creates a new gray scale (single band/color) image."
 		GrayU8 binary = new GrayU8(color.getWidth(), color.getHeight());
+		//"Applies Sauvola thresholding to the input image."
 		GThresholdImageOps.localSauvola(color, binary, 8, 0.05f, true);
-		
+
+		//MP
+		//BufferedImage imageBinary = VisualizeBinaryData.renderBinary(binary,false,null);
+
+		//"Renders a binary image. 0 = black and 1 = white.
+		//param invert: if true it will invert the image on output.
 		image = VisualizeBinaryData.renderBinary(binary, false, null);
 
-		//MP: bei width ohne 1+C funktioniert's, bei height aber so und so nicht.
+		/*MP: bei width ohne 1+C funktioniert's, bei height aber so und so nicht.
 		GrayU8 toProcess = new GrayU8(binary.getWidth() +1+ CACHE_SIZE/2,
 				                      binary.getHeight() + CACHE_SIZE/2);
-		ImageMiscOps.copy(0, 0, 0, 0, binary.getWidth(), binary.getHeight(),
-				ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class), toProcess);
-		//MP
-		BufferedImage imageToProcess = VisualizeBinaryData.renderBinary(toProcess,false,null);
+	  	*/
+		//MP-Alternative zu oben:
+		int korrekturWidth = 0;
+		int korrekturHeight = 0;
+		if (binary.getWidth()%CACHE_SIZE != 0)
+			korrekturWidth = CACHE_SIZE - binary.getWidth()%CACHE_SIZE;
+		if (binary.getHeight()%CACHE_SIZE != 0)
+			korrekturHeight = CACHE_SIZE - binary.getHeight()%CACHE_SIZE;
+		GrayU8 toProcess = new GrayU8(binary.getWidth() + korrekturWidth,
+				binary.getHeight() + korrekturHeight);
+
+
+		//"Copies a rectangular region from one image into another."
+		ImageMiscOps.copy(0, 0, 0, 0,
+				binary.getWidth(), binary.getHeight(),
+				ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class),
+				toProcess);
 		
 		Instance inst;
 		
@@ -225,7 +270,7 @@ public class BagOfWordGenerator {
 			//MP
 		    System.out.println(new File(".").getCanonicalPath());
 			//MP-Versuch
-			for (int i=1; i<=18;i++){
+			for (int i=1; i<=3;i++){
 				t.addTrainingExample(pathTraining + "pt_3-0-13/pic_" + Integer.toString(i) + ".jpg");
 			}
 			//t.addTrainingExample("\\Users\\Michael\\iss-java-projekt\\src\\corpus\\Krypto-Buch\\pic_1.png");
@@ -244,7 +289,9 @@ public class BagOfWordGenerator {
 			//double u [] = t.generateBoWForImage(pathTest + "20170602_134259.png", "/Users/bdludwig/log_1.csv");
 			//double v [] = t.generateBoWForImage(pathTest + "20170602_134148.png", "/Users/bdludwig/log_2.csv");
 
-			System.out.println(t.compare(u, v));
+			//MP
+			System.out.println("Comparison between u and v:" + t.compare(u, v));
+			//System.out.println(t.compare(u, v));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
