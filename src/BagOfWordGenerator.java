@@ -142,12 +142,14 @@ public class BagOfWordGenerator {
 
 		ImageMiscOps.copy(0, 0, 0, 0,
 				binary.getWidth(), binary.getHeight(),
-				ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class), toProcess);
+				//ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class),
+				binary,
+				toProcess);
 
 		// Initalisiere Histogramm der Cluster
 
 		double [] histogram = new double [NUM_WORDS];
-		for (int i = 0; i < 64; i++) histogram[i] = 0;
+		for (int i = 0; i < NUM_WORDS; i++) histogram[i] = 0;
 		
 		// konstruiere die einzelnen Kacheln
 		
@@ -173,7 +175,7 @@ public class BagOfWordGenerator {
 		
 		PrintStream out = new PrintStream(new File(logfile));
 		out.print(histogram[0]);
-		for (int i = 1; i < 64; i++) out.print("\t" + histogram[i]);
+		for (int i = 1; i < NUM_WORDS; i++) out.print("\t" + histogram[i]);
 		out.print("\n");
 		out.close();
 		
@@ -200,7 +202,9 @@ public class BagOfWordGenerator {
 
 		//"Renders a binary image. 0 = black and 1 = white.
 		//param invert: if true it will invert the image on output.
-		image = VisualizeBinaryData.renderBinary(binary, false, null);
+
+		//MP mit Ludwig geeinigt, dass das weg kann.
+		//image = VisualizeBinaryData.renderBinary(binary, false, null);
 
 		/*MP: bei width ohne 1+C funktioniert's, bei height aber so und so nicht.
 		GrayU8 toProcess = new GrayU8(binary.getWidth() +1+ CACHE_SIZE/2,
@@ -220,7 +224,8 @@ public class BagOfWordGenerator {
 		//"Copies a rectangular region from one image into another."
 		ImageMiscOps.copy(0, 0, 0, 0,
 				binary.getWidth(), binary.getHeight(),
-				ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class),
+				//ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class),
+				binary,
 				toProcess);
 		
 		Instance inst;
@@ -241,8 +246,11 @@ public class BagOfWordGenerator {
 			// wir benutzen hier einen einfachen KMeans-Algorithmus
 			clusterer = new SimpleKMeans();
 			// die genauen Einstellungen können von der WEKA-GUI übernommen werden
-			// mit diesen Einstellungen konstruiert der Algorithmus 64 Cluster
-			clusterer.setOptions(weka.core.Utils.splitOptions("-init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 64 -A \"weka.core.EuclideanDistance -R first-last\" -I 500 -num-slots 1 -S 10"));
+			// mit diesen Einstellungen konstruiert der Algorithmus NUM_WORDS Cluster
+			clusterer.setOptions(weka.core.Utils.splitOptions("-init 0 -max-candidates 100 " +
+					"-periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 " +
+					"-N " + NUM_WORDS + " -A \"weka.core.EuclideanDistance -R first-last\" " +
+					"-I 500 -num-slots 1 -S 10"));
 			clusterer.buildClusterer(data);
 
 			codebook = clusterer.getClusterCentroids();
@@ -290,13 +298,17 @@ public class BagOfWordGenerator {
 					"log_1.csv");
 			double v[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_20.jpg",
 					"log_2.csv");
+			double w[] = t.generateBoWForImage(pathTest + "pt_3-0-26/pic_19.jpg",
+					"log_3.csv");
+
 			//double u [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_19.jpg", "log_1.csv");
 			//double v [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_20.jpg", "log_2.csv");
 			//double u [] = t.generateBoWForImage(pathTest + "20170602_134259.png", "/Users/bdludwig/log_1.csv");
 			//double v [] = t.generateBoWForImage(pathTest + "20170602_134148.png", "/Users/bdludwig/log_2.csv");
 
 			//MP
-			System.out.println("Comparison between u and v:" + t.compare(u, v));
+			System.out.println("Comparison between u and v: " + t.compare(u, v));
+			System.out.println("Comparison between w and v: " + t.compare(w,v));
 			//System.out.println(t.compare(u, v));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
