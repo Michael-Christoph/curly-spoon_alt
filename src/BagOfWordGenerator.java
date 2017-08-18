@@ -140,7 +140,9 @@ public class BagOfWordGenerator {
 		GrayU8 toProcess = new GrayU8(binary.getWidth() + korrekturWidth,
 				binary.getHeight() + korrekturHeight);
 
-		ImageMiscOps.copy(0, 0, 0, 0, binary.getWidth(), binary.getHeight(), ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class), toProcess);
+		ImageMiscOps.copy(0, 0, 0, 0,
+				binary.getWidth(), binary.getHeight(),
+				ConvertBufferedImage.convertFromSingle(image, null, GrayU8.class), toProcess);
 
 		// Initalisiere Histogramm der Cluster
 
@@ -181,6 +183,7 @@ public class BagOfWordGenerator {
 	public void addTrainingExample(String fileName) throws FileNotFoundException {	
 		// RGB-Bild in Graustufenbild konvertieren
 		
+		//"describes an Image with an accessible buffer of image data."
 		BufferedImage image = UtilImageIO.loadImage(fileName);
 
 		//"Converts a buffered image into an image of the specified type"
@@ -249,7 +252,8 @@ public class BagOfWordGenerator {
 		}
 		
 	}
-	
+
+	//Vergleich der boW-Histogramme zweier pics
 	public double compare(double [] v1, double [] v2) {
 		double n1 = 0, n2 = 0, crossprod = 0;
 		for (int i = 0; i < v1.length; i++) {
@@ -282,8 +286,10 @@ public class BagOfWordGenerator {
 			
 			t.cluster();
 			
-			double u[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_19.jpg", "log_1.csv");
-			double v[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_20.jpg", "log_2.csv");
+			double u[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_19.jpg",
+					"log_1.csv");
+			double v[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_20.jpg",
+					"log_2.csv");
 			//double u [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_19.jpg", "log_1.csv");
 			//double v [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_20.jpg", "log_2.csv");
 			//double u [] = t.generateBoWForImage(pathTest + "20170602_134259.png", "/Users/bdludwig/log_1.csv");
