@@ -1,0 +1,6 @@
+queryFormat; CACHE_SIZE; NUM_WORDS; Corpus-Groesse; u-v; w-v; laufzeit-min;
+jpg30vH; 16; 64; 2; 0.98946; 0.97915; 10;
+jpg30vH; 16; 256; 2; 0.99002; 0.98213; 50;
+png30vH; 16; 32; 2; 0.98829; 0.95301; 8;
+png30vH; 16; 64; 2; 0.98946; 0.97916; 18;
+png30vH; 16; 128; 2; 0.99066; 0.97793; 39;

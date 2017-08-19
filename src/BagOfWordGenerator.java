@@ -24,7 +24,7 @@ public class BagOfWordGenerator {
 	//MP
 	int counterMP = 0;
 
-	private final int NUM_WORDS = 64; // Anzahl verschiedener Cluster, d.h. bag of words
+	private final int NUM_WORDS = 128; // Anzahl verschiedener Cluster, d.h. bag of words
 	private final int CACHE_SIZE = 16; // Anzahl Kacheln in X- und Y-Richtung des Bilds
 	private Instances data; // Datensatz, der generiert werden soll
 	private Instances codebook;
@@ -272,37 +272,51 @@ public class BagOfWordGenerator {
 		
 		return crossprod/(Math.sqrt(n1)*Math.sqrt(n2));
 	}
+
+	//MP
+	public int getCACHE_SIZE(){
+		return CACHE_SIZE;
+	}
+	public int getNUM_WORDS(){
+		return NUM_WORDS;
+	}
 	
 	public static void main (String [] args) {
+		long startTime = System.currentTimeMillis();
 		BagOfWordGenerator t = new BagOfWordGenerator();
 		String pathTraining = "corpus/";
-		String pathTest = "query/";
+		String pathTest = "query_png/";
+
+		String[] tuerschilder = new String[]{"pt_3-0-13","pt_3-0-26"};
 
 		try {
 			//MP
 		    System.out.println(new File(".").getCanonicalPath());
 			//MP-Versuch
-			for (int i=1; i<=3;i++){
-				t.addTrainingExample(pathTraining + "pt_3-0-13/pic_" + Integer.toString(i) + ".jpg");
+			for (int sch = 0; sch<tuerschilder.length;sch++){
+				for (int i=1; i<=18;i++){
+					t.addTrainingExample(pathTraining + tuerschilder[sch] + "/pic_" + Integer.toString(i) + ".jpg");
+				}
 			}
-			//t.addTrainingExample("\\Users\\Michael\\iss-java-projekt\\src\\corpus\\Krypto-Buch\\pic_1.png");
-			//t.addTrainingExample("corpus\\Krypto-Buch\\pic_1.png");
-			//t.addTrainingExample(pathTraining + "Krypto-Buch/pic_" + Integer.toString(2)+ ".jpg");
+
 
 
 			//t.addTrainingExample(pathTraining + "PT_3.0.61/20170602_134243.png");
 			
 			t.cluster();
+
+			//MP
+			String queryFormat = "jpg";
+			if (pathTest.indexOf('j') == -1)
+				queryFormat = "png";
 			
-			double u[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_19.jpg",
+			double u[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_19." + queryFormat,
 					"log_1.csv");
-			double v[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_20.jpg",
+			double v[] = t.generateBoWForImage(pathTest + "pt_3-0-13/pic_20." + queryFormat,
 					"log_2.csv");
-			double w[] = t.generateBoWForImage(pathTest + "pt_3-0-26/pic_19.jpg",
+			double w[] = t.generateBoWForImage(pathTest + "pt_3-0-26/pic_19." + queryFormat,
 					"log_3.csv");
 
-			//double u [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_19.jpg", "log_1.csv");
-			//double v [] = t.generateBoWForImage(pathTest + "Krypto-Buch/pic_20.jpg", "log_2.csv");
 			//double u [] = t.generateBoWForImage(pathTest + "20170602_134259.png", "/Users/bdludwig/log_1.csv");
 			//double v [] = t.generateBoWForImage(pathTest + "20170602_134148.png", "/Users/bdludwig/log_2.csv");
 
@@ -310,9 +324,16 @@ public class BagOfWordGenerator {
 			System.out.println("Comparison between u and v: " + t.compare(u, v));
 			System.out.println("Comparison between w and v: " + t.compare(w,v));
 			//System.out.println(t.compare(u, v));
+
+			//MP
+			System.out.println("Die Verarbeitung mit dem query-Format = " + queryFormat + ", " +
+					"CACHE_SIZE = " + t.getCACHE_SIZE() + " NUM_WORDS = " + t.getNUM_WORDS() + " und" +
+					" Corpus-Groesse = " + tuerschilder.length + " hat " +
+					"gedauert: " + (System.currentTimeMillis()-startTime)/60000 + " min.");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 	}
 }
