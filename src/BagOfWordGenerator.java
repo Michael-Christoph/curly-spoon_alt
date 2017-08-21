@@ -24,7 +24,7 @@ public class BagOfWordGenerator {
 	//MP
 	int counterMP = 0;
 
-	private final int NUM_WORDS = 128; // Anzahl verschiedener Cluster, d.h. bag of words
+	private final int NUM_WORDS = 16; // Anzahl verschiedener Cluster, d.h. bag of words
 	private final int CACHE_SIZE = 16; // Anzahl Kacheln in X- und Y-Richtung des Bilds
 	private Instances data; // Datensatz, der generiert werden soll
 	private Instances codebook;
