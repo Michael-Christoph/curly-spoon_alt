@@ -2,8 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e734e0-c77f-4c69-b413-92ad9468ace9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_boofcv_all_0_23.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_boofcv_all_0_23.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-WebcamCapture-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-WebcamCapture-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-android-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-android-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-calibration-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-calibration-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-feature-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-feature-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-geo-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-geo-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-io-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-io-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-ip-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-ip-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-javacv-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-javacv-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-jcodec-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-jcodec-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-learning-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-learning-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-recognition-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-recognition-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-sfm-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-sfm-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-visualize-0.26-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/BoofCV-visualize-0.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/android-stubs-src.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/artoolkitplus-2.3.1-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/bridj-0.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/commons-compress-1.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/core-0.30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/ddogleg-0.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/dense64-0.30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/equation-0.30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/ffmpeg-2.8.1-1.1-linux-x86_64.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/ffmpeg-2.8.1-1.1-macosx-x86_64.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/ffmpeg-2.8.1-1.1-windows-x86_64.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/ffmpeg-2.8.1-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/flandmark-1.07-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/flycapture-2.8.3.1-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/georegression-0.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/io-0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/jarchivelib-0.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/javacpp-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/javacv-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/jcodec-0.1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/learning-0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/libdc1394-2.2.3-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/libfreenect-0.5.3-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/main-0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/models-0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/opencv-3.0.0-1.1-linux-x86_64.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/opencv-3.0.0-1.1-macosx-x86_64.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/opencv-3.0.0-1.1-windows-x86_64.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/opencv-3.0.0-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/protobuf-java-2.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/simple-0.30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/slf4j-api-1.7.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/snakeyaml-1.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/uiautomator.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/videoinput-0.200-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/webcam-capture-0.3.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/xmlpull-1.1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/xpp3_min-1.1.4c.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/xstream-1.4.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/xz-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/boofcv-v0.26-libs/zip4j-1.3.2.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_1.csv" afterPath="$PROJECT_DIR$/log_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_2.csv" afterPath="$PROJECT_DIR$/log_2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_3.csv" afterPath="$PROJECT_DIR$/log_3.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BagOfWordGenerator.java" afterPath="$PROJECT_DIR$/src/BagOfWordGenerator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,12 +84,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="BagOfWordGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-769">
-              <caret line="289" column="70" lean-forward="true" selection-start-line="289" selection-start-column="8" selection-end-line="289" selection-end-column="70" />
+            <state relative-caret-position="3307">
+              <caret line="336" column="60" lean-forward="false" selection-start-line="336" selection-start-column="60" selection-end-line="336" selection-end-column="60" />
               <folding>
                 <element signature="e#1270#1281#0" expanded="true" />
               </folding>
@@ -38,11 +107,66 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/BagOfWordGenerator.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
     <option name="y" value="-4" />
     <option name="width" value="1608" />
     <option name="height" value="908" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="curly-spoon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="curly-spoon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="curly-spoon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="curly-spoon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -303,35 +427,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="908" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -348,8 +473,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-769">
-          <caret line="289" column="70" lean-forward="true" selection-start-line="289" selection-start-column="8" selection-end-line="289" selection-end-column="70" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1270#1281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3307">
+          <caret line="336" column="60" lean-forward="false" selection-start-line="336" selection-start-column="60" selection-end-line="336" selection-end-column="60" />
           <folding>
             <element signature="e#1270#1281#0" expanded="true" />
           </folding>

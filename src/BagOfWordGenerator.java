@@ -284,18 +284,24 @@ public class BagOfWordGenerator {
 	public static void main (String [] args) {
 		long startTime = System.currentTimeMillis();
 		BagOfWordGenerator t = new BagOfWordGenerator();
-		String pathTraining = "corpus/";
-		String pathTest = "query_png/";
+		String pathTraining = "corpus_jpg10vh/";
+		String pathTest = "query_jpg10vh/";
 
-		String[] tuerschilder = new String[]{"pt_3-0-13","pt_3-0-26"};
+		String[] tuerschilder = new String[]{"pt_3-0-13","pt_3-0-26","pt_3-0-56","pt_3-0-57"};
 
 		try {
 			//MP
 		    System.out.println(new File(".").getCanonicalPath());
-			//MP-Versuch
+
+			//MP
+			String corpusFormat = "jpg";
+			if (pathTest.indexOf('j') == -1)
+				corpusFormat = "png";
+
+		    //MP-Versuch
 			for (int sch = 0; sch<tuerschilder.length;sch++){
 				for (int i=1; i<=18;i++){
-					t.addTrainingExample(pathTraining + tuerschilder[sch] + "/pic_" + Integer.toString(i) + ".jpg");
+					t.addTrainingExample(pathTraining + tuerschilder[sch] + "/pic_" + Integer.toString(i) + "." + corpusFormat);
 				}
 			}
 
@@ -326,8 +332,9 @@ public class BagOfWordGenerator {
 			//System.out.println(t.compare(u, v));
 
 			//MP
-			System.out.println("Die Verarbeitung mit dem query-Format = " + queryFormat + ", " +
-					"CACHE_SIZE = " + t.getCACHE_SIZE() + " NUM_WORDS = " + t.getNUM_WORDS() + " und" +
+			System.out.println("Die Verarbeitung mit dem corpus-Format = " +
+							corpusFormat + ", dem query-Format = " + queryFormat + ", " +
+					"CACHE_SIZE = " + t.getCACHE_SIZE() + ", NUM_WORDS = " + t.getNUM_WORDS() + " und" +
 					" Corpus-Groesse = " + tuerschilder.length + " hat " +
 					"gedauert: " + (System.currentTimeMillis()-startTime)/60000 + " min.");
 		} catch (Exception e) {
