@@ -15,7 +15,7 @@ public class TestKlasseMP_2 {
         dir.mkdir();
         File resultFile = new File("results_" + trialName + ".csv");
         for (int cacheSize = 4;cacheSize<=8;cacheSize *=2){
-            for (int numWords = 4; numWords<=8;cacheSize *=2){
+            for (int numWords = 4; numWords<=8;numWords *=2){
                 for (int i = 0; i<=1;i++){
                     boolean useCanopiesForFasterClustering = (i==0) ? false : true;
                     for (int maxCandidates=100;maxCandidates<=1000;maxCandidates *=10){
@@ -36,7 +36,7 @@ public class TestKlasseMP_2 {
                                                     maxNumIterations,
                                                     faster,
                                                     numSlots,
-                                                    true,
+                                                    false,
                                                     resultFile,trialName);
                                         }
                                     }
