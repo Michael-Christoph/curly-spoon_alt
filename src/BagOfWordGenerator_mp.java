@@ -26,14 +26,45 @@ public class BagOfWordGenerator_mp {
 	private Instances data; // Datensatz, der generiert werden soll
 	private Instances codebook;
 	private SimpleKMeans clusterer;	// Weka-Instanz des verwendeten Cluster-Algorithmus
+	private String canopyOption = "";
+	private int periodicPruning;
+	private int maxCandidates;
+	private int minDensity;
+	private double t1,t2;
+	private int maxNumIterations;
+	private String fasterDistanceCalculations = "";
+	private int numSlots;
+	private String outputDebugInfo = "";
 	
 	public BagOfWordGenerator_mp(){
-		this(16,16);
+		this(16,16,
+				false, 100,
+				10000, 2, -1.0, -1.25,500,
+				false,1,false);
 	}
 
-	public BagOfWordGenerator_mp(int numWords,int cacheSize) {
+	public BagOfWordGenerator_mp(int cacheSize,int numWords,
+								 boolean useCanopiesForFasterClustering, int maxCandidates,
+								 int periodicPruning, int minDensity, double t2, double t1,
+								 int maxNumIterations, boolean faster,int numSlots,
+								 boolean iWantDebugInfo) {
 		this.numWords = numWords;
 		this.cacheSize = cacheSize;
+		if (useCanopiesForFasterClustering)
+			canopyOption = " -C ";
+		this.maxCandidates = maxCandidates;
+		this.periodicPruning = periodicPruning;
+		this.minDensity = minDensity;
+		this.t2 = t2;
+		this.t1 = t1;
+		this.maxNumIterations = maxNumIterations;
+		if (faster)
+			fasterDistanceCalculations = " -fast";
+		this.numSlots = numSlots;
+		if (iWantDebugInfo)
+			outputDebugInfo = " -output-debug-info";
+
+
 
 		// konstruiere die Datenstruktur für WEKA
 		// Vektor für die Werte eines Bilds.
@@ -63,7 +94,7 @@ public class BagOfWordGenerator_mp {
 	private Instance greyValueVectorForCache(GrayU8 toProcess, int x, int y) {
 
 		//MP
-		System.out.println("Entered method 'greyValueVectorForCache' ..." + counterMP++);
+		//System.out.println("Entered method 'greyValueVectorForCache' ..." + counterMP++);
 
 		int i = 0;
 		double [] vals = new double[cacheSize * cacheSize];
@@ -179,7 +210,7 @@ public class BagOfWordGenerator_mp {
 		
 		PrintStream out = new PrintStream(new File(logfile));
 		out.print(histogram[0]);
-		for (int i = 1; i < numWords; i++) out.print("\t" + histogram[i]);
+		for (int i = 1; i < numWords; i++) out.print(";" + histogram[i]);
 		out.print("\n");
 		out.close();
 		
@@ -251,10 +282,17 @@ public class BagOfWordGenerator_mp {
 			clusterer = new SimpleKMeans();
 			// die genauen Einstellungen können von der WEKA-GUI übernommen werden
 			// mit diesen Einstellungen konstruiert der Algorithmus numWords Cluster
-			clusterer.setOptions(weka.core.Utils.splitOptions("-init 0 -max-candidates 100 " +
-					"-periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 " +
-					"-N " + numWords + " -A \"weka.core.EuclideanDistance -R first-last\" " +
-					"-I 500 -num-slots 1 -S 10"));
+			clusterer.setOptions(weka.core.Utils.splitOptions("-init 0 " + canopyOption +
+					" -max-candidates " + maxCandidates +
+					" -periodic-pruning " + periodicPruning +
+					" -min-density " + minDensity +
+					" -t2 " + t2 +
+					" -t1 " + t1 +
+					" -N " + numWords +
+					" -A \"weka.core.EuclideanDistance -R first-last\" " +
+					"-I " + maxNumIterations + fasterDistanceCalculations +
+					" -num-slots " + numSlots +
+					" -S 10" + outputDebugInfo));
 			clusterer.buildClusterer(data);
 
 			codebook = clusterer.getClusterCentroids();
@@ -284,6 +322,7 @@ public class BagOfWordGenerator_mp {
 	public int getNumWords(){
 		return numWords;
 	}
+	public Instances getData(){return data;}
 	
 
 }

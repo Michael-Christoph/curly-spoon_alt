@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="weka" level="project" />
-    <orderEntry type="library" exported="" name="org.boofcv:all:0.23" level="project" />
+    <orderEntry type="library" name="weka" level="project" />
+    <orderEntry type="library" name="boofcv-all-0" level="project" />
   </component>
 </module>
