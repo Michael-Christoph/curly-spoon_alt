@@ -10,12 +10,12 @@ import java.util.Date;
  */
 public class TestKlasseMP_3 {
     public static void main(String[] args){
-        String trialName = "mp_sa0940";
+        String trialName = "mp_sa1118";
         File dir = new File("logs_" + trialName);
         dir.mkdir();
         File resultFile = new File("results_" + trialName + ".csv");
-        for (int cacheSize = 4;cacheSize<=8;cacheSize *=2){
-            for (int numWords = 4; numWords<=8;numWords *=2){
+        for (int cacheSize = 4;cacheSize<=16;cacheSize *=2){
+            for (int numWords = 4; numWords<=16;numWords *=2){
                 for (int i = 0; i<=1;i++){
                     boolean useCanopiesForFasterClustering = (i==0) ? false : true;
                     for (int maxCandidates=100;maxCandidates<=1000;maxCandidates *=10){
@@ -37,6 +37,7 @@ public class TestKlasseMP_3 {
                                                     faster,
                                                     numSlots,
                                                     false,
+                                                    false,
                                                     resultFile,trialName);
                                         }
                                     }
@@ -56,6 +57,7 @@ public class TestKlasseMP_3 {
                                             int minDensity,double t2,double t1,
                                             int maxNumIterations,boolean faster,
                                             int numSlots, boolean iWantDebugInfo,
+                                            boolean saveInstancesToArff,
                                             File resultFile,String trialName){
         long startTime = System.currentTimeMillis();
         String useCanopies = (useCanopiesForFasterClustering) ? "t" : "f";
@@ -94,12 +96,13 @@ public class TestKlasseMP_3 {
                     maxNumIterations+fasterToString+numSlots+trainingExamplesProTuerschild+
                     wenigerTuerschilderDamitHeapNichtUeberlaeuft;
 
-            ArffSaver saver = new ArffSaver();
-            saver.setInstances(myBgfwrdgen.getData());
-            saver.setFile(new File(".data/" + configName +".arff"));
-            saver.writeBatch();
 
-
+            if (saveInstancesToArff){
+                ArffSaver saver = new ArffSaver();
+                saver.setInstances(myBgfwrdgen.getData());
+                saver.setFile(new File(".data" + trialName + "/" + configName +".arff"));
+                saver.writeBatch();
+            }
 
             //t.addTrainingExample(pathTraining + "PT_3.0.61/20170602_134243.png");
 
@@ -110,19 +113,19 @@ public class TestKlasseMP_3 {
             if (pathTest.indexOf('j') == -1)
                 queryFormat = "png";
 
-            double u[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-13/pic_19." + queryFormat,
-                    "logs_" + trialName + "/" + "log_u" + configName + ".csv");
-            double v[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-13/pic_20." + queryFormat,
-                    "logs_" + trialName + "/" + "log_v" + configName + ".csv");
-            double w[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-26/pic_19." + queryFormat,
-                    "logs_" + trialName + "/" + "log_w" + configName +  ".csv");
+            int u[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-13/pic_19." + queryFormat,
+                    "logs_" + trialName + "/" + "log_u" + configName + ".csv",true);
+            int v[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-13/pic_20." + queryFormat,
+                    "logs_" + trialName + "/" + "log_v" + configName + ".csv",true);
+            int w[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-26/pic_19." + queryFormat,
+                    "logs_" + trialName + "/" + "log_w" + configName +  ".csv",true);
 
             //double u [] = t.generateBoWForImage(pathTest + "20170602_134259.png", "/Users/bdludwig/log_1.csv");
             //double v [] = t.generateBoWForImage(pathTest + "20170602_134148.png", "/Users/bdludwig/log_2.csv");
 
             //MP
-            double uvComparisonResult = myBgfwrdgen.compare(u,v);
-            double wvComparisonResult = myBgfwrdgen.compare(w,v);
+            double uvComparisonResult = Math.round(myBgfwrdgen.compare(u,v)*1000000)/1000000.00;
+            double wvComparisonResult = Math.round(myBgfwrdgen.compare(w,v)*1000000)/1000000.00;
             System.out.println("Comparison between u and v: " + uvComparisonResult);
             System.out.println("Comparison between w and v: " + wvComparisonResult);
             //System.out.println(t.compare(u, v));

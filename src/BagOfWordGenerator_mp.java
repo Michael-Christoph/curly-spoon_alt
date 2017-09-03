@@ -42,6 +42,12 @@ public class BagOfWordGenerator_mp {
 				10000, 2, -1.0, -1.25,500,
 				false,1,false);
 	}
+	public BagOfWordGenerator_mp(int cacheSize,int numWords){
+		this(cacheSize,numWords,
+				false, 100,
+				10000, 2, -1.0, -1.25,500,
+				false,1,false);
+	}
 
 	public BagOfWordGenerator_mp(int cacheSize,int numWords,
 								 boolean useCanopiesForFasterClustering, int maxCandidates,
@@ -143,10 +149,10 @@ public class BagOfWordGenerator_mp {
 		return inst;
 	}
 	
-	public double [] generateBoWForImage(String fileName, String logfile) throws Exception {
+	public int [] generateBoWForImage(String fileName, String logfile,boolean logHistograms) throws Exception {
 
 		//MP
-		System.out.println("Entered method 'generateBoWForImage' ...");
+		System.out.println("Entered method 'generateBoWForImage' with file: " + fileName);
 		counterMP = 0;
 
 		BufferedImage image = UtilImageIO.loadImage(fileName);
@@ -183,7 +189,7 @@ public class BagOfWordGenerator_mp {
 
 		// Initalisiere Histogramm der Cluster
 
-		double [] histogram = new double [numWords];
+		int [] histogram = new int [numWords];
 		for (int i = 0; i < numWords; i++) histogram[i] = 0;
 		
 		// konstruiere die einzelnen Kacheln
@@ -206,13 +212,17 @@ public class BagOfWordGenerator_mp {
 			}
 		}
 
-		// Schreibe Log-Daten für dieses Bild
-		
-		PrintStream out = new PrintStream(new File(logfile));
-		out.print(histogram[0]);
-		for (int i = 1; i < numWords; i++) out.print(";" + histogram[i]);
-		out.print("\n");
-		out.close();
+		if (logHistograms){
+			// Schreibe Log-Daten für dieses Bild
+
+			PrintStream out = new PrintStream(new File(logfile));
+			out.print(histogram[0]);
+			for (int i = 1; i < numWords; i++) out.print(";" + histogram[i]);
+			out.print("\n");
+			out.close();
+		}
+
+
 		
 		return histogram;
 	}
@@ -304,7 +314,7 @@ public class BagOfWordGenerator_mp {
 	}
 
 	//Vergleich der boW-Histogramme zweier pics
-	public double compare(double [] v1, double [] v2) {
+	public double compare(int [] v1, int [] v2) {
 		double n1 = 0, n2 = 0, crossprod = 0;
 		for (int i = 0; i < v1.length; i++) {
 			crossprod += v1[i] * v2[i];

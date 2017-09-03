@@ -108,12 +108,12 @@ public class TestKlasseMP_2 {
             if (pathTest.indexOf('j') == -1)
                 queryFormat = "png";
 
-            double u[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-13/pic_19." + queryFormat,
-                    "logs_" + trialName + "/" + "log_u" + configName + ".csv");
-            double v[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-13/pic_20." + queryFormat,
-                    "logs_" + trialName + "/" + "log_v" + configName + ".csv");
-            double w[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-26/pic_19." + queryFormat,
-                    "logs_" + trialName + "/" + "log_w" + configName +  ".csv");
+            int u[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-13/pic_19." + queryFormat,
+                    "logs_" + trialName + "/" + "log_u" + configName + ".csv",true);
+            int v[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-13/pic_20." + queryFormat,
+                    "logs_" + trialName + "/" + "log_v" + configName + ".csv",true);
+            int w[] = myBgfwrdgen.generateBoWForImage(pathTest + "pt_3-0-26/pic_19." + queryFormat,
+                    "logs_" + trialName + "/" + "log_w" + configName +  ".csv",true);
 
             //double u [] = t.generateBoWForImage(pathTest + "20170602_134259.png", "/Users/bdludwig/log_1.csv");
             //double v [] = t.generateBoWForImage(pathTest + "20170602_134148.png", "/Users/bdludwig/log_2.csv");

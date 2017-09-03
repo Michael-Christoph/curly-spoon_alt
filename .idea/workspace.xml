@@ -2,9 +2,557 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e734e0-c77f-4c69-b413-92ad9468ace9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BagOfWordGenerator_trainedAndClustered.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KNNKlassifikator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tuerschilderkennung_eval.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10/query_jpg15vh+autokorr+s10/44f10010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f1000100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164f10010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t1000100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10164t10010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f1000100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324f10010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t1000100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10324t10010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f1000100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044f10010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t1000100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1044t10010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10644f100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10644f100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s10644f100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f1000100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084f10010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t1000100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100010004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t100100004-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010002-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010002-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010002-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010002-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010002-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010002-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010002-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010002-1.0-1.25500t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010004-1.0-1.25100f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010004-1.0-1.25100f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010004-1.0-1.25100t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010004-1.0-1.25100t238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010004-1.0-1.25500f138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010004-1.0-1.25500f238.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010004-1.0-1.25500t138.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.data/corpus_jpg15vh+autokorr+s10query_jpg15vh+autokorr+s1084t10010004-1.0-1.25500t238.arff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BagOfWordGenerator_mp.java" afterPath="$PROJECT_DIR$/src/BagOfWordGenerator_mp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestKlasseMP_2.java" afterPath="$PROJECT_DIR$/src/TestKlasseMP_2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestKlasseMP_3.java" afterPath="$PROJECT_DIR$/src/TestKlasseMP_3.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +568,9 @@
       <file leaf-file-name="TestKlasseMP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestKlasseMP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="32">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -32,8 +578,8 @@
       <file leaf-file-name="TestKlasseMP_2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestKlasseMP_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="319">
+              <caret line="115" column="83" lean-forward="false" selection-start-line="115" selection-start-column="83" selection-end-line="115" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,13 +587,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestKlasseMP_3.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TestKlasseMP_3.java">
+      <file leaf-file-name="BagOfWordGenerator_trainedAndClustered.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator_trainedAndClustered.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="126">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1725#1726#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,36 +602,42 @@
       <file leaf-file-name="BagOfWordGenerator_mp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator_mp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+            <state relative-caret-position="222">
+              <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BagOfWordGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator.java">
+      <file leaf-file-name="Tuerschilderkennung_eval.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tuerschilderkennung_eval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7232">
-              <caret line="242" column="16" lean-forward="false" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
+            <state relative-caret-position="128">
+              <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#9076#9077#0" expanded="false" />
-                <element signature="e#9100#9101#0" expanded="false" />
-                <element signature="e#9128#9129#0" expanded="false" />
-                <element signature="e#9151#9152#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tuerschilderkennung.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tuerschilderkennung.java">
+      <file leaf-file-name="KNNKlassifikator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KNNKlassifikator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="1760">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestKlasseMP_3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestKlasseMP_3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="133" column="23" lean-forward="false" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,6 +669,16 @@
       <find>logs</find>
       <find>String config</find>
       <find>logfile</find>
+      <find>round</find>
+      <find>pathTrain</find>
+      <find>double</find>
+      <find>catch</find>
+      <find>pathTest</find>
+      <find>corpusFo</find>
+      <find>corpusFormat</find>
+      <find>corpusForm</find>
+      <find>stream</find>
+      <find>100440</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,9 +693,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/BagOfWordGenerator.java" />
-        <option value="$PROJECT_DIR$/src/BagOfWordGenerator_mp.java" />
-        <option value="$PROJECT_DIR$/src/TestKlasseMP_2.java" />
         <option value="$PROJECT_DIR$/src/TestKlasseMP_3.java" />
+        <option value="$PROJECT_DIR$/src/TestKlasseMP_2.java" />
+        <option value="$PROJECT_DIR$/src/BagOfWordGenerator_trainedAndClustered.java" />
+        <option value="$PROJECT_DIR$/src/BagOfWordGenerator_mp.java" />
+        <option value="$PROJECT_DIR$/src/KNNKlassifikator.java" />
+        <option value="$PROJECT_DIR$/src/Tuerschilderkennung_eval.java" />
       </list>
     </option>
   </component>
@@ -248,22 +813,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestKlasseMP_3">
-    <configuration default="false" name="BagOfWordGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="BagOfWordGenerator" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="iss-java-projekt" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Tuerschilderkennung_eval">
     <configuration default="false" name="Tuerschilderkennung" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Tuerschilderkennung" />
@@ -312,6 +862,21 @@
     <configuration default="false" name="TestKlasseMP_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="TestKlasseMP_3" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="iss-java-projekt" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tuerschilderkennung_eval" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Tuerschilderkennung_eval" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -529,19 +1094,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.BagOfWordGenerator" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Tuerschilderkennung" />
-      <item index="2" class="java.lang.String" itemvalue="Application.BagOfWordGenerator_mp" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestKlasseMP_2" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestKlasseMP_3" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Tuerschilderkennung" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BagOfWordGenerator_mp" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestKlasseMP_2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestKlasseMP_3" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Tuerschilderkennung_eval" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestKlasseMP_3" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestKlasseMP_2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.BagOfWordGenerator_mp" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Tuerschilderkennung" />
-        <item index="4" class="java.lang.String" itemvalue="Application.BagOfWordGenerator" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Tuerschilderkennung_eval" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestKlasseMP_3" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestKlasseMP_2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BagOfWordGenerator_mp" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Tuerschilderkennung" />
       </list>
     </recent_temporary>
   </component>
@@ -594,6 +1159,37 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885087" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="96" y="96" width="1408" height="708" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885087" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -601,16 +1197,14 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/BagOfWordGenerator_mp.java</url>
-          <line>145</line>
-          <properties class="BagOfWordGenerator_mp" method="generateBoWForImage">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Tuerschilderkennung_eval.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -623,9 +1217,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,13 +1233,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7232">
           <caret line="242" column="16" lean-forward="false" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#9076#9077#0" expanded="false" />
-            <element signature="e#9100#9101#0" expanded="false" />
-            <element signature="e#9128#9129#0" expanded="false" />
-            <element signature="e#9151#9152#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,9 +1241,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -675,9 +1259,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,9 +1267,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -705,9 +1285,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -715,9 +1293,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -735,9 +1311,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -745,9 +1319,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -768,64 +1340,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/iss-projekt_testordner/TestKlasseMP_2.java" />
+    <entry file="file://$USER_HOME$/jartest/src/TestKlasseMP_2.java" />
+    <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="242" column="16" lean-forward="false" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tuerschilderkennung.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/iss-projekt_testordner/TestKlasseMP_2.java" />
-    <entry file="file://$USER_HOME$/jartest/src/TestKlasseMP_2.java" />
     <entry file="file://$PROJECT_DIR$/src/TestKlasseMP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="32">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7232">
-          <caret line="242" column="16" lean-forward="false" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#9076#9077#0" expanded="false" />
-            <element signature="e#9100#9101#0" expanded="false" />
-            <element signature="e#9128#9129#0" expanded="false" />
-            <element signature="e#9151#9152#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator_mp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestKlasseMP_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="319">
+          <caret line="115" column="83" lean-forward="false" selection-start-line="115" selection-start-column="83" selection-end-line="115" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator_mp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BagOfWordGenerator_trainedAndClustered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1725#1726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KNNKlassifikator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1760">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestKlasseMP_3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="145">
+          <caret line="133" column="23" lean-forward="false" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tuerschilderkennung_eval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
