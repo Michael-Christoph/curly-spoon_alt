@@ -1,13 +1,13 @@
-import java.util.HashMap;
+import java.util.Arrays;
 
 /**
  * Created by Michael on 02.09.2017.
  */
 public class KNNKlassifikator {
-    BagOfWordGenerator_trainedAndClustered bgfwrdgen_clustered;
+    BagOfWordsGenerator_trainedAndClustered bgfwrdgen_clustered;
     int[][][] corpusHistograms;
 
-    public KNNKlassifikator(BagOfWordGenerator_trainedAndClustered bgfwrdgen_clustered) throws Exception{
+    public KNNKlassifikator(BagOfWordsGenerator_trainedAndClustered bgfwrdgen_clustered) throws Exception{
 
         this.bgfwrdgen_clustered = bgfwrdgen_clustered;
         generateHistogramsForCorpus();
@@ -16,7 +16,7 @@ public class KNNKlassifikator {
         String[] schilder = bgfwrdgen_clustered.getSchilder();
         int numTrainingExamples = bgfwrdgen_clustered.getTrainingExamples();
         String pathTraining = bgfwrdgen_clustered.getPathTraining();
-        //MP
+
         String queryFormat = ".jpg";
         if (pathTraining.indexOf('j') == -1)
             queryFormat = ".png";
@@ -37,7 +37,7 @@ public class KNNKlassifikator {
     //nächsten Nachbar-pics zugehört.
     //k=numTrainingExamples, da ja zu hoffen ist, dass die k Trainings-Pics des richtigen
     //Türschilds besonders nah beim queryPic liegen.
-    public String classify(String queryPicFileName) throws Exception{
+    public String classify(String queryPicFileName,boolean weighted) throws Exception{
 
         int k = bgfwrdgen_clustered.getTrainingExamples();
         String pathTest = bgfwrdgen_clustered.getPathTest();
@@ -65,17 +65,19 @@ public class KNNKlassifikator {
                 //sortiere comparisonResult in die Rangliste ein.
                 for (int rank=k;rank>0;rank--){
                     if (kNearestNumbers[rank-1]>=comparisonResult) {
-                        //kNearestNumbers[rank] = comparisonResult;
-                        squeezeInNum(kNearestNumbers,comparisonResult,rank);
-                        squeezeIn(kNearestNeighbors,bgfwrdgen_clustered.getSchilder()[i],rank);
-                        //kNearestNeighbors[rank] = bgfwrdgen_clustered.getSchilder()[i];
+                        squeezeInNumber(kNearestNumbers,comparisonResult,rank);
+                        squeezeInNeighbor(kNearestNeighbors,bgfwrdgen_clustered.getSchilder()[i],rank);
                         break;
                     } else {
+                        //springe einen Rang nach oben
                         if (rank-1 != 0) {
                             continue;
+                        //weise Rang 1 zu und verlasse den Sortier-loop.
                         } else {
-                            kNearestNumbers[rank-1] = comparisonResult;
-                            kNearestNeighbors[rank-1] = bgfwrdgen_clustered.getSchilder()[i];
+                            //kNearestNumbers[rank-1] = comparisonResult;
+                            //kNearestNeighbors[rank-1] = bgfwrdgen_clustered.getSchilder()[i];
+                            squeezeInNumber(kNearestNumbers,comparisonResult,rank-1);
+                            squeezeInNeighbor(kNearestNeighbors,bgfwrdgen_clustered.getSchilder()[i],rank-1);
                             break;
                         }
 
@@ -88,9 +90,10 @@ public class KNNKlassifikator {
                     System.out.println(num);
             }
         }
-        return majority(kNearestNeighbors);
+        String[] kNearestNeighborsWithoutBuffer = Arrays.copyOfRange(kNearestNeighbors,0,kNearestNeighbors.length-1);
+        return majority(kNearestNeighborsWithoutBuffer,weighted);
     }
-    private void squeezeIn(String[] currentKNearestNeighbors,String schild,int rank){
+    private void squeezeInNeighbor(String[] currentKNearestNeighbors, String schild, int rank){
         String schildDasWeichenMuss = currentKNearestNeighbors[rank];
         currentKNearestNeighbors[rank] = schild;
         for (int i=rank+1;i<currentKNearestNeighbors.length;i++){
@@ -99,7 +102,7 @@ public class KNNKlassifikator {
             schildDasWeichenMuss = schildDasWeichenMuss2;
         }
     }
-    private void squeezeInNum(double[] currentKNearestNumbers,double comparisonResult,int rank){
+    private void squeezeInNumber(double[] currentKNearestNumbers, double comparisonResult, int rank){
         double zahlDieWeichenMuss = currentKNearestNumbers[rank];
         currentKNearestNumbers[rank] = comparisonResult;
         for (int i=rank+1;i<currentKNearestNumbers.length;i++){
@@ -108,8 +111,20 @@ public class KNNKlassifikator {
             zahlDieWeichenMuss = zahlDieWeichenMuss2;
         }
     }
-    private String majority(String[] kNearestNeighbors){
-        System.out.println("Determined as kNearestNeighbors:");
+    private String majority(String[] kNearestNeighbors,boolean weighted){
+        String messageWeighted = "";
+        if (weighted){
+            int n = kNearestNeighbors.length;
+            String[] kNearestNeighborsWeighted = new String[(n*(n+1))/2];
+            for (int rank=0; rank<kNearestNeighbors.length;rank++){
+                for (int multiplier = 0; multiplier<kNearestNeighbors.length-rank;multiplier++){
+                    kNearestNeighborsWeighted[rank+multiplier] = kNearestNeighbors[rank];
+                }
+            }
+            kNearestNeighbors = kNearestNeighborsWeighted;
+            messageWeighted = ", weighted";
+        }
+        System.out.println("Determined as kNearestNeighbors" + messageWeighted + ":");
         for (String neighbor: kNearestNeighbors)
             System.out.println(neighbor);
 

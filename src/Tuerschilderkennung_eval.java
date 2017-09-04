@@ -5,18 +5,18 @@ import java.io.PrintStream;
  * Created by Michael on 02.09.2017.
  */
 public class Tuerschilderkennung_eval {
-    private static final String TRIAL_NAME = "eval_gesamt_xxx";
+    private static final String TRIAL_NAME = "eval_gesamt_mitknnkorr";
     private static final String PATH_TRAINING = "corpus_jpg15vh+autokorr+s10/";
     private static final String PATH_TEST = "query_jpg15vh+autokorr+s10/";
-    private static final String[] SCHILDER = {"pt_3-0-13","pt_3-0-26",
-            "pt_3-0-56","pt_3-0-57","pt_3-0-67","pt_3-0-68","pt_3-0-84a","pt_3-0-84b",
-            "pt_3-0-84c","pt_3-0-84d"};
+    private static final String[] SCHILDER = {"pt_3-0-13","pt_3-0-26","pt_3-0-56","pt_3-0-57",
+            "pt_3-0-67","pt_3-0-68","pt_3-0-84a","pt_3-0-84b","pt_3-0-84c","pt_3-0-84d"};
     private static final int NUM_TRAINING_EXAMPLES = 18;
     private static final String[] QUERY_PICS = {"/pic_19","/pic_20"};
     private static final int INIT_CACHE_SIZE = 4;
-    private static final int MAX_CACHE_SIZE = 64;
-    private static final int INIT_NUM_WORDS = 4;
-    private static final int MAX_NUM_WORDS = 512;
+    private static final int MAX_CACHE_SIZE = 4;
+    private static final int INIT_NUM_WORDS = 16;
+    private static final int MAX_NUM_WORDS = 16;
+    private static final boolean WEIGHTED_KNN = false;
     public static void main(String[] args) throws Exception{
 
         for (int cacheSize = INIT_CACHE_SIZE; cacheSize<= MAX_CACHE_SIZE; cacheSize *= 2){
@@ -39,10 +39,10 @@ public class Tuerschilderkennung_eval {
 
     }
     private static double fehlerrate(int cacheSize, int numWords) throws Exception{
-        BagOfWordGenerator_mp  bgfwrdgen = new BagOfWordGenerator_mp(cacheSize,
+        BagOfWordsGenerator_mod bgfwrdgen = new BagOfWordsGenerator_mod(cacheSize,
                 numWords);
-        BagOfWordGenerator_trainedAndClustered bfwrdgen_clustered =
-                new BagOfWordGenerator_trainedAndClustered(bgfwrdgen,
+        BagOfWordsGenerator_trainedAndClustered bfwrdgen_clustered =
+                new BagOfWordsGenerator_trainedAndClustered(bgfwrdgen,
                         PATH_TRAINING,PATH_TEST,SCHILDER,NUM_TRAINING_EXAMPLES,
                         TRIAL_NAME);
         KNNKlassifikator klassifikator = new KNNKlassifikator(bfwrdgen_clustered);
@@ -50,7 +50,7 @@ public class Tuerschilderkennung_eval {
         int falscheKlassifikationen = 0;
         for (String schild: SCHILDER){
             for (String queryPic: QUERY_PICS){
-                String classifiedAs = klassifikator.classify(schild+queryPic);
+                String classifiedAs = klassifikator.classify(schild+queryPic,WEIGHTED_KNN);
                 if (classifiedAs.equals(schild))
                     richtigeKlassifikationen++;
                 else
