@@ -116,12 +116,18 @@ public class KNNKlassifikator {
         if (weighted){
             int n = kNearestNeighbors.length;
             String[] kNearestNeighborsWeighted = new String[(n*(n+1))/2];
+            int position = 0;
             for (int rank=0; rank<kNearestNeighbors.length;rank++){
-                for (int multiplier = 0; multiplier<kNearestNeighbors.length-rank;multiplier++){
-                    kNearestNeighborsWeighted[rank+multiplier] = kNearestNeighbors[rank];
+                int numMultiplications = n-rank;
+                for (int multiplier = 0; multiplier<numMultiplications;multiplier++){
+                    kNearestNeighborsWeighted[position+multiplier] = kNearestNeighbors[rank];
                 }
+                position += numMultiplications;
             }
-            kNearestNeighbors = kNearestNeighborsWeighted;
+            System.out.println("kNearestNeighborsWeighted:");
+            for (String neighbor: kNearestNeighborsWeighted)
+                System.out.println(neighbor);
+            kNearestNeighbors = Arrays.copyOfRange(kNearestNeighborsWeighted,0,kNearestNeighborsWeighted.length);
             messageWeighted = ", weighted";
         }
         System.out.println("Determined as kNearestNeighbors" + messageWeighted + ":");

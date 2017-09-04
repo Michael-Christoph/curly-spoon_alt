@@ -5,7 +5,7 @@ import java.io.PrintStream;
  * Created by Michael on 02.09.2017.
  */
 public class Tuerschilderkennung_eval {
-    private static final String TRIAL_NAME = "eval_gesamt_mitknnkorr";
+    private static final String TRIAL_NAME = "eval_gesamt_xxxxxxxxx";
     private static final String PATH_TRAINING = "corpus_jpg15vh+autokorr+s10/";
     private static final String PATH_TEST = "query_jpg15vh+autokorr+s10/";
     private static final String[] SCHILDER = {"pt_3-0-13","pt_3-0-26","pt_3-0-56","pt_3-0-57",
@@ -14,9 +14,9 @@ public class Tuerschilderkennung_eval {
     private static final String[] QUERY_PICS = {"/pic_19","/pic_20"};
     private static final int INIT_CACHE_SIZE = 4;
     private static final int MAX_CACHE_SIZE = 4;
-    private static final int INIT_NUM_WORDS = 16;
-    private static final int MAX_NUM_WORDS = 16;
-    private static final boolean WEIGHTED_KNN = false;
+    private static final int INIT_NUM_WORDS = 8;
+    private static final int MAX_NUM_WORDS = 8;
+    private static final boolean WEIGHTED_KNN = true;
     public static void main(String[] args) throws Exception{
 
         for (int cacheSize = INIT_CACHE_SIZE; cacheSize<= MAX_CACHE_SIZE; cacheSize *= 2){
@@ -31,6 +31,7 @@ public class Tuerschilderkennung_eval {
                 writeToResultFile.print(";" + PATH_TEST);
                 writeToResultFile.print(";" + cacheSize);
                 writeToResultFile.print(";" + numWords);
+                writeToResultFile.print(";" + WEIGHTED_KNN);
                 writeToResultFile.print(";" + fehlerRate);
                 writeToResultFile.print("\n");
                 writeToResultFile.close();
