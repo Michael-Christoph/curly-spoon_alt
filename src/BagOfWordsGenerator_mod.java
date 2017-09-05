@@ -296,7 +296,6 @@ public class BagOfWordsGenerator_mod {
 		}
 		
 	}
-
 	//Vergleich der boW-Histogramme zweier pics
 	public double compare(int [] v1, int [] v2) {
 		double n1 = 0, n2 = 0, crossprod = 0;
@@ -305,7 +304,7 @@ public class BagOfWordsGenerator_mod {
 			n1 += v1[i]*v1[i];
 			n2 += v2[i]*v2[i];
 		}
-		
+
 		return crossprod/(Math.sqrt(n1)*Math.sqrt(n2));
 	}
 
